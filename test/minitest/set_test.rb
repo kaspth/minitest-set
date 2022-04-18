@@ -52,3 +52,20 @@ class Minitest::Set::HooksTest < Minitest::SetTest
     assert_nil Attribution.greeting
   end
 end
+
+class Minitest::Set::SetupInvocationTest < Minitest::SetTest
+  def setup
+    super
+    set Attribution, name: :inner, greeting: :inner
+  end
+
+  def test_attribute_change_when_invoked_from_setup
+    assert_attributes_change :inner
+  end
+
+  def teardown
+    super
+    assert_nil Attribution.name
+    assert_nil Attribution.greeting
+  end
+end
