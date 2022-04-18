@@ -3,17 +3,15 @@
 require_relative "lib/minitest/set/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "minitest-set"
-  spec.version       = Minitest::Set::VERSION
-  spec.authors       = ["Kasper Timm Hansen"]
-  spec.email         = ["hey@kaspth.com"]
+  spec.name    = "minitest-set"
+  spec.version = Minitest::Set::VERSION
+  spec.authors = ["Kasper Timm Hansen"]
+  spec.email   = ["hey@kaspth.com"]
 
-  spec.summary       = "Set configurations for the duration of a test or a block with automatic reset."
-  spec.homepage      = "https://github.com/kaspth/minitest-set"
-  spec.license       = "MIT"
+  spec.summary  = "Set configurations for the duration of a test or a block with automatic reset."
+  spec.homepage = "https://github.com/kaspth/minitest-set"
+  spec.license  = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
-
-  spec.metadata["allowed_push_host"] = "Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"]    = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
