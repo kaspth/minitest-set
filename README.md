@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-See [the test for usage](https://kaspth/minitest-set/blob/main/test/minitest/set_test.rb)
+See [the test for usage](https://github.com/kaspth/minitest-set/blob/main/test/minitest/set_test.rb).
 
 ## Development
 
